@@ -8,18 +8,6 @@ import 'package:get/get.dart';
 class FilterController extends GetxController {
   static FilterController get instance => Get.find();
 
-  // Sample data to filter
-  final List<String> dataList = [
-    'Apple',
-    'Banana',
-    'Orange',
-    'Mango',
-    'Pineapple',
-    'Grapes',
-  ];
-
-  // List of Continents
-
   @override
   void onInit() {
     filterSections = [
@@ -135,7 +123,8 @@ class FilterController extends GetxController {
 
       Get.back();
     } catch (e) {
-      print(e.toString());
+      //For debugging
+      e.toString();
     }
   }
 
